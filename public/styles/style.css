@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;600&family=Blaka+Hollow&family=Diplomata+SC&family=Monoton&family=Pacifico&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Stardos+Stencil&family=Wallpoet&display=swap");
+/* 
+font-family: 'Arima', cursive;
+font-family: 'Blaka Hollow', cursive;
+font-family: 'Diplomata SC', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Rubik Glitch', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Stardos Stencil', cursive;
+font-family: 'Wallpoet', cursive;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ffffde;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.nav-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  background: #ffffde;
+}
+
+.nav-brand,
+.nav-brand:hover {
+  font-family: "Rubik Wet Paint", cursiv;
+  font-size: 2.5rem;
+  margin-left: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f0bb), color-stop(#c4dfaa), color-stop(#90c8ac), to(#73a9ad));
+  background-image: linear-gradient(to bottom, #f5f0bb, #c4dfaa, #90c8ac, #73a9ad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.nav-options {
+  margin-left: auto;
+}
+
+.nav-options .register-btn {
+  text-decoration: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: #87805e;
+  color: #fff;
+  font-family: "Arima", cursive;
+  margin-right: 15px;
+}
+
+.nav-options .login-btn {
+  text-decoration: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: #b09b71;
+  color: #fff;
+  font-family: "Arima", cursive;
+  margin-right: 15px;
+}
+
+.alert {
+  z-index: 999;
+}
+
+.Home-main-section {
+  max-width: 100vw;
+  height: calc(100vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffffde;
+}
+
+.home-img {
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  -webkit-animation: slideInFromLeft 1s ease-in;
+          animation: slideInFromLeft 1s ease-in;
+}
+
+.home-heading {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  -webkit-animation: slideInFromRight 1s ease-in;
+          animation: slideInFromRight 1s ease-in;
+}
+
+#footer {
+  width: 100vw;
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#github-details > a,
+#github-details > a:hover,
+#instagram-details > a,
+#instagram-details > a:hover {
+  color: #87805e;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.github-icon,
+.instagram-icon {
+  position: relative;
+  top: 3px;
+  margin: 0 5px;
+}
+
+#github-details {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#instagram-details {
+  margin: 0 20px 10px auto;
+}
+
+.signup-section {
+  min-height: calc(100vh - 60px);
+  background: #ffffde;
+  padding-top: 20px;
+}
+
+.signup-heading {
+  font-family: "Monoton", cursive;
+  color: #366873;
+}
+
+.form-error {
+  display: block;
+  color: red;
+  padding-left: 40px;
+}
+
+.login-section {
+  min-height: calc(100vh - 60px);
+  background-color: #ffffde;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-section #login-form {
+  margin-top: 20px;
+  width: 330px;
+  color: #87805e;
+  font-size: 1.5rem;
+  font-family: "Arima", cursive;
+  font-weight: 800;
+}
+
+.login-section #login-form button {
+  text-decoration: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: #b09b71;
+  color: #fff;
+  font-family: "Arima", cursive;
+}
+
+.login-error {
+  color: red;
+  font-size: 1.5rem;
+  font-family: "Stardos Stencil", cursive;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+#dashboard-section {
+  min-height: calc(100vh - 60px);
+  background-color: #ffffde;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Arima", cursive;
+}
+
+#dashboard-section #dashboard-gif {
+  height: 300px;
+  width: 300px;
+}
+
+#dashboard-section #todo-empty {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #87805e;
+  font-family: "Rubik Glitch", cursive;
+  opacity: 0.5;
+}
+
+#dashboard-section #addTask h1 {
+  margin: 10px 0;
+  text-align: center;
+  color: #b09b71;
+}
+
+#dashboard-section #addTask #content {
+  height: 40px;
+  width: 400px;
+  border-radius: 7px;
+  outline: none;
+  color: #87805e;
+  border: 3px solid #b09b71;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+#dashboard-section #addTask #time {
+  font-size: 1.2rem;
+  height: 40px;
+  width: 100px;
+  border-radius: 7px;
+  outline: none;
+  color: #87805e;
+  border: 3px solid #b09b71;
+  padding-left: 8px;
+}
+
+#dashboard-section #addTask button {
+  text-decoration: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: #b09b71;
+  color: #fff;
+  font-family: "Arima", cursive;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  top: 5px;
+}
+
+#dashboard-section #todo table {
+  margin-top: 20px;
+}
+
+#dashboard-section #todo table td,
+#dashboard-section #todo table th {
+  padding: 0 20px;
+  text-align: center;
+}
+
+#dashboard-section #todo table #time-column {
+  width: 100px;
+}
+
+#dashboard-section #todo table td .delete {
+  text-decoration: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: transparent;
+  color: red;
+  font-family: "Arima", cursive;
+  border: none;
+  width: 50px;
+  padding: 5px 10px;
+}
+
+.error-section {
+  min-height: calc(100vh - 60px);
+  background-color: #ffffde;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.error-section .user-exist-img {
+  margin-top: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.error-section .something-error-img {
+  height: 400px;
+  width: 550px;
+}
+
+.error-section a,
+.error-section a:hover {
+  text-decoration: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  background-color: #b09b71;
+  color: #fff;
+  font-family: "Arima", cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-section {
+    height: 100;
+  }
+  .Home-main-section,
+  .signup-section,
+  .login-section,
+  .userExist-section {
+    min-height: calc(100vh-100px);
+    max-width: 100vw;
+  }
+  .Home-main-section {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 100px;
+  }
+  .nav-brand,
+  .nav-brand:hover {
+    font-size: 2rem;
+  }
+  .nav-options .register-btn,
+  .nav-options .login-btn {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+  .home-img {
+    height: 300px;
+    width: 250px;
+  }
+  .home-heading {
+    font-size: 1.8rem;
+  }
+  .error-section .user-exist-img {
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+  }
+  .error-section .something-error-img {
+    margin-top: 30px;
+    height: 300px;
+    width: 350px;
+  }
+  .error-section .something-heading {
+    font-size: 1.2rem;
+  }
+  .error-section .unauthorized-img {
+    margin-top: 30px;
+    height: 400px;
+    width: 350px;
+  }
+  #dashboard-section #addTask {
+    text-align: center;
+  }
+  #dashboard-section #addTask #content {
+    width: 330px;
+  }
+  #dashboard-section #addTask #time {
+    margin-top: 20px;
+  }
+  #dashboard-section #todo table {
+    margin-top: 20px;
+  }
+  #dashboard-section #todo table td,
+  #dashboard-section #todo table th {
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */

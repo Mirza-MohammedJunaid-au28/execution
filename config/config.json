@@ -1,0 +1,11 @@
+{
+    "adminEmail" : "executionnnnnn@gmail.com",
+    "adminPassword" : "bdnoswkyaaebklds",
+    "saltrounds" : 12,
+    "db" : "execution",
+    "collection" : "user-data",
+    "jwtKey" : "NoOneCanDecodeMe",
+    "url" : "mongodb+srv://admin:execution123@cluster0.ry5qu.mongodb.net/?retryWrites=true&w=majority",
+    "db-user" : "admin",
+    "db-password" : "execution123"
+}

@@ -1,0 +1,39 @@
+<!-- Navbar -->
+<nav>
+    <section class="nav-section">
+        <div class="nav-heading">
+            <a href="/" class="nav-brand">
+                <h1>Execution</h1>
+            </a>
+        </div>
+        <div class="nav-options">
+            <a href="/logout" class="login-btn">Logout</a>
+        </div>
+    </section>
+</nav>
+<!-- Navbar -->
+<main>
+    <section id="dashboard-section">
+        <form class="text-center">
+            <img src="assets/dashboardGIF.gif" alt="dashboard-gif" id="dashboard-gif">
+            <div id="addTask">
+                <h1>Add Task</h1>
+                <input type="text" name="content" id="content">
+                <input type="time" name="time" id="time">
+                <button class='bx bx-plus-medical' type="button"></button>
+            </div>
+        </form>
+        <span id="todo-empty"></span>
+        <div id="todo">
+            <table id="todo-table" style="display:none;">
+                <tr>
+                <th>Sr No</th>
+                <th>Task</th>
+                <th id="time-column">Time</th>
+                <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+<script src="js/dashboard.js"></script>
